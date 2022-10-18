@@ -10,7 +10,7 @@ body{
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
 }
 
@@ -19,9 +19,15 @@ body{
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 288px;
+    max-width: 288px;
     border-radius: 20px;
     padding: 16px;
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0476518);
+    margin: 12px;
+}
+
+.card-qrcode {
+    max-height: 288px;
 }
 
 .card-qrcode img {
@@ -39,7 +45,7 @@ body{
     margin-bottom: 16px;
 }
 
-.card-body h2 {
+.card-body h1 {
     color: #1F314F;
     font-size: 22px;
     font-weight: 700;
